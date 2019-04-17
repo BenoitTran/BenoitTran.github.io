@@ -147,13 +147,16 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
-
-                        <div id="github-graph" class="github-graph">
                           <!-- Include the library. -->
                           <script
                             src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
                           ></script>
+
+                          <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                          <link
+                             rel="stylesheet"
+                             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+                          />
                           <!-- Prepare a container for your calendar. -->
                           <div class="calendar">
                               <!-- Loading stuff -->
@@ -162,7 +165,6 @@
                           <script>
                               GitHubCalendar(".calendar", "BenoitTran", { responsive: true });
                           </script>
-                        </div><!--//github-graph-->
                     </div><!--//secton-inner-->
                 </section><!--//section-->
 
