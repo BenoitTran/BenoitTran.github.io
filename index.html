@@ -150,12 +150,18 @@
                         <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
 
                         <div id="github-graph" class="github-graph">
-
-                          <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
-                          <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-                          <script src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-                          <script src="assets/plugins/github-calendar/example/js/main.js"></script>
-
+                          <!-- Include the library. -->
+                          <script
+                            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+                          ></script>
+                          <!-- Prepare a container for your calendar. -->
+                          <div class="calendar">
+                              <!-- Loading stuff -->
+                              Loading the data just for you.
+                          </div>
+                          <script>
+                              GitHubCalendar(".calendar", "BenoitTran", { responsive: true });
+                          </script>
                         </div><!--//github-graph-->
                     </div><!--//secton-inner-->
                 </section><!--//section-->
@@ -214,15 +220,15 @@
                         <h2 class="heading">Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Teaching - <span class="place"><a href="https://www.polytechnique.edu/">&Eacute;cole Polytechnique</a></span> <span class="year">(2017 - )</span></h3>
-                                  <h4 class ="title">Discrete mathematics (2017- )</h4>
-                                  <p class="summary">Teaching assistant in charge of exercise sessions (45 hours) for a course on Discrete Mathematics by <a href="http://igor-kortchemski.perso.math.cnrs.fr/index.html">Igor Kortchemski</a> for the first year of the Bachelor program of the École Polytechnique.<p>
-                                  <h4 class = "title"> Operations Research (2017-2018)</h4>
-                                  <p class="summary">Tutor (20 hours) for a course on Operations Research by <a href="http://www.cmap.polytechnique.fr/~gaubert/">St&eacute;phane Gaubert</a> for the third year engineering students (Master) of the École Polytechnique.</p>
+                                <h3 class="title">Teaching at <span class="place"><a href="https://www.polytechnique.edu/">&Eacute;cole Polytechnique</a></span> <span class="year">(2017 - )</span></h3>
+                                  <h4 class ="title">Discrete mathematics <br/> (2017- )</h4>
+                                  <p class="summary">Teaching assistant in charge of exercise sessions (45 hours) for a course on Discrete Mathematics by <a href="http://igor-kortchemski.perso.math.cnrs.fr/index.html">Igor Kortchemski</a> for the first year of the Bachelor program.<p>
+                                  <h4 class = "title"> Operations research <br/> (2017-2018)</h4>
+                                  <p class="summary">Tutor (20 hours) for a course on Operations Research by <a href="http://www.cmap.polytechnique.fr/~gaubert/">St&eacute;phane Gaubert</a> for the third year engineering students.</p>
                             </div><!--//item-->
 
                             <div class="item">
-                                <h3 class="title">Intern - <span class="place"><a href="https://www.laas.fr/public/">LAAS - CNRS</a></span> <span class="year">(April 2017 - July 2017)</span></h3>
+                                <h3 class="title">Intern at <span class="place"><a href="https://www.laas.fr/public/">LAAS - CNRS</a></span> <span class="year">(April 2017 - July 2017)</span></h3>
                                 <p> Master thesis on the applications of the empirical Christoffel function in Machine Learning supervised by <a href="https://homepages.laas.fr/lasserre/drupal/home">Jean-Bernard Lasserre</a> and <a href="https://www.irit.fr/~Edouard.Pauwels/">Edouard Pauwels</a> .</p>
                             </div><!--//item-->
 
